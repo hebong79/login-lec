@@ -1,4 +1,18 @@
 "use strict"
 
-console.log("로그인 js 입니다.");
-console.log("hello");
+const id = document.querySelector("#id");
+const pass = document.querySelector("#password");
+const loginBtn = document.querySelector("button");
+
+loginBtn.addEventListener("click", login);
+
+function login(){
+    const req = {
+        id : id.value,
+        password : pass.value
+    };
+
+    console.log(req);
+}
+
+
