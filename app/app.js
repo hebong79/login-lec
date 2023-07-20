@@ -12,7 +12,7 @@ const home = require("./src/routes/home");
 app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
-
+app.use(express.static(`${__dirname}/src/public`));  // __dirname -> app.js가 있는 현재디렉토리
 app.use("/", home);   // use -> 미들웨어를 등록하는 함수
 
 
