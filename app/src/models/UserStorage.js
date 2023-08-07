@@ -6,6 +6,7 @@ class UserStorage {
         password : ["1234", "1234", "12345"], 
         name: ["hdw", "kim", "kong"],
     };
+    
 
     static getUsers(...fields) {
         const users = this.#users;
