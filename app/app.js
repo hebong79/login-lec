@@ -24,9 +24,6 @@ app.use("/", home);   // use -> 미들웨어를 등록하는 함수
 module.exports = app;
 
 
-
-
-
 // const http = require("http")
 // const app = http.createServer((req, res)=>{
 //     res.writeHead(200, {"Content-Type":"text/html; charset=utf-8"});
